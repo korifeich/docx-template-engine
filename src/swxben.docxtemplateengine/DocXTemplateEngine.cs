@@ -11,8 +11,8 @@ namespace swxben.docxtemplateengine
     public class DocXTemplateEngine : IDocXTemplateEngine
     {
         const string DocumentXmlPath = @"word/document.xml";
-        public const string TOKEN_START = "«";
-        public const string TOKEN_END = "»";
+        public const string TOKEN_START = "{%";
+        public const string TOKEN_END = "%}";
 
         public void Process(string source, Stream destination, object data)
         {
